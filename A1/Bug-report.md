@@ -11,8 +11,9 @@ int main() {
     int Time_variable (10);
     int Distance_variable (Speed_variable*Time_variable);
     
-    cout << "The total distance travelled is " << Distance_variable << endl;
-    
+    cout << "The total distance travelled is " << Distance_variable << end;
+
+    return (0)
 }
 
 ```
@@ -22,6 +23,8 @@ int main() {
 One of the bugs the code is giving me is the following. It is telling me my cout is not declared.
 
 C:/Users/User/Desktop/CPPProjects/Section4/A1_Q1/main.cpp:9:5: error: 'cout' was not declared in this scope
+     cout << "The total distance travelled is " << Distance_variable << end;
+     ^~~~
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
@@ -60,13 +63,29 @@ I learned that I should always define a library when referencing certain variabl
 1. **The incorrect original code or code snippit that you wrote:**
 
 ```
-code with bugs or code snippet with bug goes here
+#include <iostream>
+
+using namespace std;
+ 
+int main() {
+
+    int Speed_variable (20);
+    int Time_variable (10);
+    int Distance_variable (Speed_variable*Time_variable);
+    
+    cout << "The total distance travelled is " << Distance_variable << end;
+
+    return (0)
+}
 
 ```
 
 2. **What bug does the original code have?**
 
-  
+ 
+C:/Users/User/Desktop/CPPProjects/Section4/A1_Q1/main.cpp:9:72: error: 'end' was not declared in this scope
+     cout << "The total distance travelled is " << Distance_variable << end;
+                                                                        ^~~
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
@@ -75,7 +94,20 @@ code with bugs or code snippet with bug goes here
 5. **The corresponding bug-free code or code snippet is:**
 
 ```
-bug-free code or code snippet goes here
+#include <iostream>
+
+using namespace std;
+ 
+int main() {
+
+    int Speed_variable (20);
+    int Time_variable (10);
+    int Distance_variable (Speed_variable*Time_variable);
+    
+    cout << "The total distance travelled is " << Distance_variable << endl;
+
+    return (0)
+}
 
 ```
 
@@ -88,14 +120,28 @@ bug-free code or code snippet goes here
 1. **The incorrect original code or code snippit that you wrote:**
 
 ```
-code with bugs or code snippet with bug goes here
+#include <iostream>
+
+using namespace std;
+ 
+int main() {
+
+    int Speed_variable (20);
+    int Time_variable (10);
+    int Distance_variable (Speed_variable*Time_variable);
+    
+    cout << "The total distance travelled is " << Distance_variable << endl;
+
+    return (0)
+}
 
 ```
 
 2. **What bug does the original code have?**
 
-  
-
+  C:/Users/User/Desktop/CPPProjects/Section4/A1_Q1/main.cpp:11:15: error: expected ';' before '}' token
+     return (0)
+               ^
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
 4. **How to correct the bug?**
@@ -103,7 +149,20 @@ code with bugs or code snippet with bug goes here
 5. **The corresponding bug-free code or code snippet is:**
 
 ```
-bug-free code or code snippet goes here
+#include <iostream>
+
+using namespace std;
+ 
+int main() {
+
+    int Speed_variable (20);
+    int Time_variable (10);
+    int Distance_variable (Speed_variable*Time_variable);
+    
+    cout << "The total distance travelled is " << Distance_variable << endl;
+
+    return (0);
+}
 
 ```
 
