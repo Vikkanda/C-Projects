@@ -3,19 +3,16 @@
 1. **The incorrect original code or code snippit that you wrote:**
 
 ``` cpp
-//code with bugs or code snippet with bug goes here
-
-//sample code
-
-// Online C++ compiler to run C++ online.
-// Write C++ code in this online editor and run it.
-
 #include <iostream>
 
 int main() {
-    std:cout << "Hello World!";
-  
-  return 0;
+
+    int Speed_variable (20);
+    int Time_variable (10);
+    int Distance_variable (Speed_variable*Time_variable);
+    
+    cout << "The total distance travelled is " << Distance_variable << endl;
+    
 }
 
 ```
