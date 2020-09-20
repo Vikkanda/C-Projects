@@ -20,7 +20,7 @@ int main() {
 
 2. **What bug does the original code have?**
 
-One of the bugs the code is giving me is the following. It is telling me my cout is not declared.
+One of the bugs is specifying that my "cout" is not declared.
 
 C:/Users/User/Desktop/CPPProjects/Section4/A1_Q1/main.cpp:9:5: error: 'cout' was not declared in this scope
      cout << "The total distance travelled is " << Distance_variable << end;
@@ -82,18 +82,19 @@ int main() {
 
 2. **What bug does the original code have?**
 
- 
+One of the bugs is specifying that my "end" was not declared in the scope.
+
 C:/Users/User/Desktop/CPPProjects/Section4/A1_Q1/main.cpp:9:72: error: 'end' was not declared in this scope
      cout << "The total distance travelled is " << Distance_variable << end;
                                                                         ^~~
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
-I was over confident about my code and didn't double check for spelling errors. I made a syntax error by making a typo in my code. 
+I was overtly confident about my code and didn't double check for spelling errors. I made a syntax error by making a typo in my code. 
 
 4. **How to correct the bug?**
 
-This code is corrected by double checking the fixing the spelling from "end" to "endl."
+This code is corrected by fixing the spelling from "end" to "endl" while also double checking the code. 
 
 5. **The corresponding bug-free code or code snippet is:**
 
@@ -144,6 +145,8 @@ int main() {
 ```
 
 2. **What bug does the original code have?**
+
+One of the bugs is specifying that there was ";" expected, however it can't find it.
 
   C:/Users/User/Desktop/CPPProjects/Section4/A1_Q1/main.cpp:11:15: error: expected ';' before '}' token
      return (0)
