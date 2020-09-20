@@ -28,7 +28,7 @@ C:/Users/User/Desktop/CPPProjects/Section4/A1_Q1/main.cpp:9:5: error: 'cout' was
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
-I thought that CodeLite would understand cout funtions as they are a part of the program. 
+I thought that CodeLite would understand cout funtions as they are a part of the program. This was a linker error where the linker was having trouble linking the object files together to create an executable.
 
 4. **How to correct the bug?**
 
@@ -89,7 +89,11 @@ C:/Users/User/Desktop/CPPProjects/Section4/A1_Q1/main.cpp:9:72: error: 'end' was
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
+I was over confident about my code and didn't double check for spelling errors. I made a syntax error by making a typo in my code. 
+
 4. **How to correct the bug?**
+
+This code is corrected by double checking the fixing the spelling from "end" to "endl."
 
 5. **The corresponding bug-free code or code snippet is:**
 
@@ -112,6 +116,8 @@ int main() {
 ```
 
 6. **What is the take-away message from this bug?**
+
+The main take-away from this error is to always douuble check the code for spelling errors as it can cause the compiler to get confused in what is going on. This one error may also lead to the system identying other errors and fixing the first error may resolve the consequent errors.
 
 ---
 
@@ -144,7 +150,11 @@ int main() {
                ^
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
+I faced a compiler error and missed adding a semi colon to end the final line of the code after "return (0)." This is essentially a syntax error where there was a mistake in the structure of my code
+
 4. **How to correct the bug?**
+
+This bug is easily corrected by adding a semi colon after the "return (0)" line.
 
 5. **The corresponding bug-free code or code snippet is:**
 
@@ -168,3 +178,4 @@ int main() {
 
 6. **What is the take-away message from this bug?**
 
+I have to make sure sure each of my lines ends off with a semi colon to indicate the line ending. This can lead to various issues in my code if not rectified. It is easy to forget adding the correct line terminations at both the beginning and end of written code.
