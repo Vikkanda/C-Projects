@@ -1,9 +1,10 @@
 #include <iostream>
+
 using namespace std;
 
-int main()
-{
-    int selection;
+int main() {
+    
+    int selection {};
       cout << "Which formula do you want to see?\n\n";
       cout << "1. Area of a circle\n";
       cout << "2. Area of a rectangle\n";
@@ -11,10 +12,10 @@ int main()
       cout << "4. None of them!\n\n";
       cout << "Enter your selection from 1 - 4 below:\n\n"; 
       
-      cin >> selection;
+        cin >> selection;
  
-switch (selection)
-    {
+    switch (selection) {
+        
         case 1:
                 cout << "\nPi times radius squared\n\n";
                     break;
