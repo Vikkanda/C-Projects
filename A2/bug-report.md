@@ -3,18 +3,6 @@
 1. **The incorrect original code or code snippit that you wrote:**
 
 ``` cpp
-#include <iostream>
-
-int main() {
-
-    int Speed_variable (20);
-    int Time_variable (10);
-    int Distance_variable (Speed_variable*Time_variable);
-    
-    cout << "The total distance travelled is " << Distance_variable << end;
-
-    return (0)
-}
 
 ```
 
@@ -37,18 +25,7 @@ I found that "Namespace" is missed in my code which is why "cout" was coming up 
 5. **The corresponding bug-free code or code snippet is:**
 
 ```
-#include <iostream>
 
-using namespace std
-int main() {
-
-    int Speed_variable (20);
-    int Time_variable (10);
-    int Distance_variable (Speed_variable*Time_variable);
-    
-    cout << "The total distance travelled is " << Distance_variable << endl;
-    
-}
 
 ```
 
@@ -63,20 +40,6 @@ I learned that I should always define a library when referencing certain variabl
 1. **The incorrect original code or code snippit that you wrote:**
 
 ```
-#include <iostream>
-
-using namespace std;
- 
-int main() {
-
-    int Speed_variable (20);
-    int Time_variable (10);
-    int Distance_variable (Speed_variable*Time_variable);
-    
-    cout << "The total distance travelled is " << Distance_variable << end;
-
-    return (0)
-}
 
 ```
 
@@ -99,20 +62,7 @@ This code is corrected by fixing the spelling from "end" to "endl" while also do
 5. **The corresponding bug-free code or code snippet is:**
 
 ```
-#include <iostream>
 
-using namespace std;
- 
-int main() {
-
-    int Speed_variable (20);
-    int Time_variable (10);
-    int Distance_variable (Speed_variable*Time_variable);
-    
-    cout << "The total distance travelled is " << Distance_variable << endl;
-
-    return (0)
-}
 
 ```
 
@@ -127,20 +77,6 @@ The main take-away from this error is to always douuble check the code for spell
 1. **The incorrect original code or code snippit that you wrote:**
 
 ```
-#include <iostream>
-
-using namespace std;
- 
-int main() {
-
-    int Speed_variable (20);
-    int Time_variable (10);
-    int Distance_variable (Speed_variable*Time_variable);
-    
-    cout << "The total distance travelled is " << Distance_variable << endl;
-
-    return (0)
-}
 
 ```
 
@@ -164,18 +100,7 @@ This bug is easily corrected by adding a semi colon after the "return (0)" line.
 ```
 #include <iostream>
 
-using namespace std;
- 
-int main() {
 
-    int Speed_variable (20);
-    int Time_variable (10);
-    int Distance_variable (Speed_variable*Time_variable);
-    
-    cout << "The total distance travelled is " << Distance_variable << endl;
-
-    return (0);
-}
 
 ```
 
