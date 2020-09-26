@@ -1,3 +1,5 @@
+//Q31. Rewrite the following program. Use a switch statement instead of the if/else if statement.
+
 #include <iostream>
 
 using namespace std;
@@ -32,4 +34,6 @@ int main() {
                 cout << "\nNot good with numbers, eh?\n\n";
     } 
 }
+//I modified the original code by making the program look cleaner when executing.
+//I added additional endline statements at the beginning and end of the lines of my cout statements
 
