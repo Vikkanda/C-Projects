@@ -3,7 +3,40 @@
 1. **The incorrect original code or code snippit that you wrote:**
 
 ``` cpp
+#include <iostream>
 
+using namespace std;
+
+int main() {
+    
+    int selection {1,2,3,4};
+      cout << "Which formula do you want to see?\n\n";
+      cout << "1. Area of a circle\n";
+      cout << "2. Area of a rectangle\n";
+      cout << "3. Area of a cylinder\n";
+      cout << "4. None of them!\n\n";
+      cout << "Enter your selection from 1 - 4 below:\n\n"; 
+      
+        cin >> selection;
+ 
+    switch (selection); {
+        
+        case 1:
+                cout << "\nPi times radius squared\n\n";
+                    break;
+        case 2:
+                cout << "\nLength times width\n\n";
+                    break;
+        case 3:
+                cout << "\nPi times radius squared times height\n\n";
+                    break;
+        case 4:
+                cout << "\nWell okay then, good bye!\n\n";
+                    break;
+        default:
+                cout << "\nNot good with numbers, eh?\n\n";
+    } 
+}
 ```
 
 2. **What bug does the original code have?**
@@ -25,7 +58,40 @@ I found that "Namespace" is missed in my code which is why "cout" was coming up 
 5. **The corresponding bug-free code or code snippet is:**
 
 ```
+#include <iostream>
 
+using namespace std;
+
+int main() {
+    
+    int selection {};
+      cout << "Which formula do you want to see?\n\n";
+      cout << "1. Area of a circle\n";
+      cout << "2. Area of a rectangle\n";
+      cout << "3. Area of a cylinder\n";
+      cout << "4. None of them!\n\n";
+      cout << "Enter your selection from 1 - 4 below:\n\n"; 
+      
+        cin >> selection;
+ 
+    switch (selection); {
+        
+        case 1:
+                cout << "\nPi times radius squared\n\n";
+                    break;
+        case 2:
+                cout << "\nLength times width\n\n";
+                    break;
+        case 3:
+                cout << "\nPi times radius squared times height\n\n";
+                    break;
+        case 4:
+                cout << "\nWell okay then, good bye!\n\n";
+                    break;
+        default:
+                cout << "\nNot good with numbers, eh?\n\n";
+    } 
+}
 
 ```
 
@@ -40,6 +106,40 @@ I learned that I should always define a library when referencing certain variabl
 1. **The incorrect original code or code snippit that you wrote:**
 
 ```
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    int selection {};
+      cout << "Which formula do you want to see?\n\n";
+      cout << "1. Area of a circle\n";
+      cout << "2. Area of a rectangle\n";
+      cout << "3. Area of a cylinder\n";
+      cout << "4. None of them!\n\n";
+      cout << "Enter your selection from 1 - 4 below:\n\n"; 
+      
+        cin >> selection;
+ 
+    switch (selection); {
+        
+        case 1:
+                cout << "\nPi times radius squared\n\n";
+                    break;
+        case 2:
+                cout << "\nLength times width\n\n";
+                    break;
+        case 3:
+                cout << "\nPi times radius squared times height\n\n";
+                    break;
+        case 4:
+                cout << "\nWell okay then, good bye!\n\n";
+                    break;
+        default:
+                cout << "\nNot good with numbers, eh?\n\n";
+    } 
+}
 
 ```
 
@@ -62,8 +162,40 @@ This code is corrected by fixing the spelling from "end" to "endl" while also do
 5. **The corresponding bug-free code or code snippet is:**
 
 ```
+#include <iostream>
 
+using namespace std;
 
+int main() {
+    
+    int selection {};
+      cout << "Which formula do you want to see?\n\n";
+      cout << "1. Area of a circle\n";
+      cout << "2. Area of a rectangle\n";
+      cout << "3. Area of a cylinder\n";
+      cout << "4. None of them!\n\n";
+      cout << "Enter your selection from 1 - 4 below:\n\n"; 
+      
+        cin >> selection;
+ 
+    switch (selection) {
+        
+        case 1:
+                cout << "\nPi times radius squared\n\n";
+                    break;
+        case 2:
+                cout << "\nLength times width\n\n";
+                    break;
+        case 3:
+                cout << "\nPi times radius squared times height\n\n";
+                    break;
+        case 4:
+                cout << "\nWell okay then, good bye!\n\n";
+                    break;
+        default:
+                cout << "\nNot good with numbers, eh?\n\n";
+    } 
+}
 ```
 
 6. **What is the take-away message from this bug?**
@@ -77,7 +209,53 @@ The main take-away from this error is to always douuble check the code for spell
 1. **The incorrect original code or code snippit that you wrote:**
 
 ```
+#include <iostream>
+#include <iomanip>
 
+using namespace std;
+
+int main() {
+
+    const double conversion{1.32};
+    double USD {};
+    double CAD {};
+    double USDtoCAD {};
+    double CADtoUSD {};
+    int selection {};
+    USDtoCAD = USD * conversion;
+    CADtoUSD = CAD / conversion;
+
+        cout << "Welcome to the currency converter/n";
+        cout << "Please select one of the following options:\n\n";
+        cout << "1 - USD to CAD conversion\n";
+        cout << "2 - CAD to USD conversion\n\n";
+
+        cout << "Please enter either 1 or 2 below:\n\n";
+
+            cin >> selection;
+
+    switch (selection) {
+    
+        case 1:
+    
+            cout << "\nPlease enter the amount of USD to convert.\n\n";
+                cin >> USD;
+                    cout << fixed << setprecision(2);
+            cout << "\nYour USD currency equates to $" << USDtoCAD << " in CAD currency.\n\n";
+                break;
+   
+        case 2:
+      
+            cout << "\nPlease enter the amount of CAD to convert.\n\n";
+                cin >> CAD;
+                    cout << fixed << setprecision(2);
+            cout << "\nYour CAD currency equates to $" << CADtoUSD << " in USD currency.\n\n";
+                break;
+        
+        default:
+            cout << "\nYou selected an invalid entry.\n\n";
+    }
+}
 ```
 
 2. **What bug does the original code have?**
@@ -99,9 +277,52 @@ This bug is easily corrected by adding a semi colon after the "return (0)" line.
 
 ```
 #include <iostream>
+#include <iomanip>
 
+using namespace std;
 
+int main() {
 
+    const double conversion{1.32};
+    double USD {};
+    double CAD {};
+    double USDtoCAD {};
+    double CADtoUSD {};
+    int selection {};
+    
+        cout << "Welcome to the currency converter/n";
+        cout << "Please select one of the following options:\n\n";
+        cout << "1 - USD to CAD conversion\n";
+        cout << "2 - CAD to USD conversion\n\n";
+
+        cout << "Please enter either 1 or 2 below:\n\n";
+
+            cin >> selection;
+
+    switch (selection) {
+    
+        case 1:
+    
+            cout << "\nPlease enter the amount of USD to convert.\n\n";
+                cin >> USD;
+                    cout << fixed << setprecision(2);
+                    USDtoCAD = USD * conversion;
+            cout << "\nYour USD currency equates to $" << USDtoCAD << " in CAD currency.\n\n";
+                break;
+   
+        case 2:
+      
+            cout << "\nPlease enter the amount of CAD to convert.\n\n";
+                cin >> CAD;
+                    cout << fixed << setprecision(2);
+                    CADtoUSD = CAD / conversion;
+            cout << "\nYour CAD currency equates to $" << CADtoUSD << " in USD currency.\n\n";
+                break;
+        
+        default:
+            cout << "\nYou selected an invalid entry.\n\n";
+    }
+}
 ```
 
 6. **What is the take-away message from this bug?**
