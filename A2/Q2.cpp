@@ -1,4 +1,4 @@
-//Q32. Write a C++ program to enable the conversion between US dollars and Canadian Dollars. 
+ //Q32. Write a C++ program to enable the conversion between US dollars and Canadian Dollars. 
 //The program will first ask for user input to decide whether the user would like to convert USD to CAD, or the other way around. 
 //Then the program will ask for user input to indicate the amount of money in the original currency, and then output the converted amount in the targeted currency.
 
@@ -16,7 +16,7 @@ int main() {
     double CADtoUSD {};
     int selection {};
     
-        cout << "Welcome to the currency converter/n";
+        cout << "Welcome to the currency converter!\n\n";
         cout << "Please select one of the following options:\n\n";
         cout << "1 - USD to CAD conversion\n";
         cout << "2 - CAD to USD conversion\n\n";
