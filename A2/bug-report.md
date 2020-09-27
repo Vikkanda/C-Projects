@@ -95,7 +95,7 @@ int main() {
 
 6. **What is the take-away message from this bug?**
 
-The main take away message from this message is to note that elements have to be declared if multiple variables are to be defined. This is not the case for vectors has they are not fixed. In the future I may consider initiating a vector variable, however the course I have chosen in this case by not declaring is the best course of action.
+The main take away message is to note that elements have to be declared if multiple variables are defined. This is not the case for vectors as they are not fixed. In the future I may consider initiating a vector variable, however the course of action I have chosen in this case by not declaring is the best path.
 
 ---
 # Bug 2
