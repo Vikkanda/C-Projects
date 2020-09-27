@@ -51,7 +51,7 @@ The issue I was facing was that I was trying to use four integers to define "sel
 
 4. **How to correct the bug?**
 
-In this specific case this bug is corrected by removing the  the "1,2,3,4" from the "int selection" statment. I could have corrected this statement by declaring [4] elements in my array declaration.
+In this specific case this bug is corrected by removing the  the "1,2,3,4" from the "int selection" statement. I could have corrected this statement by declaring [4] elements in my array declaration.
 
 5. **The corresponding bug-free code or code snippet is:**
 
