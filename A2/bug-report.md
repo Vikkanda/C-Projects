@@ -169,7 +169,11 @@ C:/Users/User/Desktop/CPPProjects/Section4/A2_Q1/main.cpp:33:9: error: case labe
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?** 
 
+I was under the impression that every line needed a terminating statement, however that is not the case for all statements as I now know.
+
 4. **How to correct the bug?**
+
+This is corrected by removing the semicolon after the switch statement. 
 
 5. **The corresponding bug-free code or code snippet is:**
 
@@ -212,7 +216,7 @@ int main() {
 
 6. **What is the take-away message from this bug?**
 
-
+The main take away message for this bug is to not assume that every line needs a terminating charachter. It may be beneficial to read out and understand what the code is outputing in each line. This will give a deeper understanding for each line of code I write going forward. I think this take away will be beneficial as I attempt to use more complicated statements.
 ---
 
 # Bug 3
@@ -271,15 +275,18 @@ int main() {
 
 2. **What bug does the original code have?**
 
-Your USD currency equates to $0.00 in CAD currency.
+My output currency kept outputing $0 dollars.
+
+"Your USD currency equates to $0.00 in CAD currency."
 
              
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
-
+My code exectuted great as there were no errors, however as I ran it a few times I saw that the output currency kept populating to $0. I found that if I am utilizing a new variable for which part of the code has been initialized in the switch stament. I must initialize the and define the parameters of the new variable in the block of the  switch statement.
 
 4. **How to correct the bug?**
 
+The bug is corrected by declaring "USDtoCAD = USD * conversion;" and "CADtoUSD = CAD / conversion;" in the actual switch statement as indicated in the corrected code below.
 
 5. **The corresponding bug-free code or code snippet is:**
 
@@ -335,4 +342,5 @@ int main() {
 
 6. **What is the take-away message from this bug?**
 
+I found that if I am using an uninitialized variable within a switch statement then I must initialize and define it within the statement and not before it. This was a very frusterating error as it took me quite some time to fix this error. I now know to declare my uninitialized variables within some of the more complex and longer statements. This will be on my radar as I attempt more difficult statements and encounter similar errors.
 ---
