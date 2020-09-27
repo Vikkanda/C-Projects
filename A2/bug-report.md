@@ -284,7 +284,7 @@ My output currency kept outputing $0 dollars.
              
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
-My code exectuted great as there were no errors, however as I ran it a few times I saw that the output currency kept populating to $0. I found that if I am utilizing a new variable for which part of the code has been initialized in the switch stament. I must initialize the and define the parameters of the new variable in the block of the  switch statement.
+My code exectuted great as there were no errors. I ran it a few times and saw that the output currency kept populating to $0. I found that I must put new variables within switch statements if the new variable contains a second variable which has been defined within. I must initialize and define the parameters of the new variable in the block of the  switch statement.
 
 4. **How to correct the bug?**
 
@@ -344,6 +344,6 @@ int main() {
 
 6. **What is the take-away message from this bug?**
 
-I found that if I am using an uninitialized variable within a switch statement then I must initialize and define it within the statement and not before it. This was a very frusterating error as it took me quite some time to fix this error. I now know to declare my uninitialized variables within some of the more complex and longer statements. This will be on my radar as I attempt more difficult statements and encounter similar errors.
+I found that if I am using an uninitialized variable within a switch statement then I must initialize and define it within the statement and not before it. This was a very frusterating error as it took me quite some time to fixr. I now know to declare my uninitialized variables within some of the more complex and longer statements. This will be on my radar as I attempt more difficult statements and encounter similar errors.
 
 ---
