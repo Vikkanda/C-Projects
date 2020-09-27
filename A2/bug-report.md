@@ -93,8 +93,8 @@ int main() {
 
 6. **What is the take-away message from this bug?**
 
-
----
+dfdfd
+'''
 
 # Bug 2
 
