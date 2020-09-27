@@ -144,30 +144,6 @@ int main() {
 C:/Users/User/Desktop/CPPProjects/Section4/A2_Q1/main.cpp:21:9: error: case label '1' not within a switch statement
          case 1:
          ^~~~
-C:/Users/User/Desktop/CPPProjects/Section4/A2_Q1/main.cpp:23:21: error: break statement not within loop or switch
-                     break;
-                     ^~~~~
-C:/Users/User/Desktop/CPPProjects/Section4/A2_Q1/main.cpp:24:9: error: case label '2' not within a switch statement
-         case 2:
-         ^~~~
-C:/Users/User/Desktop/CPPProjects/Section4/A2_Q1/main.cpp:26:21: error: break statement not within loop or switch
-                     break;
-                     ^~~~~
-C:/Users/User/Desktop/CPPProjects/Section4/A2_Q1/main.cpp:27:9: error: case label '3' not within a switch statement
-         case 3:
-         ^~~~
-C:/Users/User/Desktop/CPPProjects/Section4/A2_Q1/main.cpp:29:21: error: break statement not within loop or switch
-                     break;
-                     ^~~~~
-C:/Users/User/Desktop/CPPProjects/Section4/A2_Q1/main.cpp:30:9: error: case label '4' not within a switch statement
-         case 4:
-         ^~~~
-C:/Users/User/Desktop/CPPProjects/Section4/A2_Q1/main.cpp:32:21: error: break statement not within loop or switch
-                     break;
-                     ^~~~~
-C:/Users/User/Desktop/CPPProjects/Section4/A2_Q1/main.cpp:33:9: error: case label not within a switch statement
-         default:
-         ^~~~~~~
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?** 
 
@@ -218,7 +194,7 @@ int main() {
 
 6. **What is the take-away message from this bug?**
 
-The main take away message for this bug is to not assume that every line needs a terminating charachter. It may be beneficial to read out and understand what the code is outputing in each line. This will give a deeper understanding for each line of code I write going forward. I think this take away will be beneficial as I attempt to use more complicated statements.
+The main take away message for this bug is to not assume that every line needs a terminating character. It may be beneficial to read out and understand what the code is outputting in each line. This will give a deeper understanding for each line of code I write going forward. I think this take away will be beneficial as I attempt to use more complicated statements.
 
 ---
 # Bug 3
@@ -344,6 +320,6 @@ int main() {
 
 6. **What is the take-away message from this bug?**
 
-I found that if I am using an uninitialized variable within a switch statement then I must initialize and define it within the statement and not before it. This was a very frusterating error as it took me quite some time to fixr. I now know to declare my uninitialized variables within some of the more complex and longer statements. This will be on my radar as I attempt more difficult statements and encounter similar errors.
+I found that if I am using an uninitialized variable within a switch statement then I must initialize and define it within the statement and not before it. This was a very frustrating error as it took me quite some time to fix. I now know to declare my uninitialized variables within some of the more complex and longer statements. This will be on my radar as I attempt more difficult statements and encounter similar errors.
 
 ---
