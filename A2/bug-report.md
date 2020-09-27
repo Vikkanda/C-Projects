@@ -47,7 +47,7 @@ C:/Users/User/Desktop/CPPProjects/Section4/A2_Q1/main.cpp:9:9: error: scalar obj
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
-I decided to deviate from this approach entirely, however the issue I was facing was that I was trying to use four integers to define "selection, however I did not have any element declared. I thought that the variable would automatically know that there were 4 elements as I was defining 4 values.
+The issue I was facing was that I was trying to use four integers to define "selection, however I did not have any element declared. I thought that the variable would automatically know that there were 4 elements as I was defining 4 values.
 
 4. **How to correct the bug?**
 
