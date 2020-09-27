@@ -41,15 +41,17 @@ int main() {
 
 2. **What bug does the original code have?**
 
-
-
 C:/Users/User/Desktop/CPPProjects/Section4/A2_Q1/main.cpp:9:9: error: scalar object 'selection' requires one element in initializer
      int selection {1,2,3,4};
          ^~~~~~~~~
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
+I decided to deviate from this approach entirely, however the issue I was facing was that I was trying to use four integers to define "selection, however I did not have any element declared. I thought that the variable would automatically know that there were 4 elements as I was defining 4 values.
+
 4. **How to correct the bug?**
+
+In this specific case this bug is corrected by removing the  the "1,2,3,4" from the "int selection" statment. I could have corrected this statement by declaring [4] elements in my array declaration.
 
 5. **The corresponding bug-free code or code snippet is:**
 
@@ -93,9 +95,9 @@ int main() {
 
 6. **What is the take-away message from this bug?**
 
-dfdfd
-'''
+The main take away message from this message is to note that elements have to be declared if multiple variables are to be defined. This is not the case for vectors has they are not fixed. In the future I may consider initiating a vector variable, however the course I have chosen in this case by not declaring is the best course of action.
 
+---
 # Bug 2
 
 1. **The incorrect original code or code snippit that you wrote:**
@@ -217,8 +219,8 @@ int main() {
 6. **What is the take-away message from this bug?**
 
 The main take away message for this bug is to not assume that every line needs a terminating charachter. It may be beneficial to read out and understand what the code is outputing in each line. This will give a deeper understanding for each line of code I write going forward. I think this take away will be beneficial as I attempt to use more complicated statements.
----
 
+---
 # Bug 3
 
 1. **The incorrect original code or code snippit that you wrote:**
@@ -343,4 +345,5 @@ int main() {
 6. **What is the take-away message from this bug?**
 
 I found that if I am using an uninitialized variable within a switch statement then I must initialize and define it within the statement and not before it. This was a very frusterating error as it took me quite some time to fix this error. I now know to declare my uninitialized variables within some of the more complex and longer statements. This will be on my radar as I attempt more difficult statements and encounter similar errors.
+
 ---
