@@ -51,7 +51,7 @@ class PayRoll
             cin >> rate;
     
             while (rate <=0) {
-                cout << "Please enter a pay rate higher than $0;
+                cout << "Please enter a pay rate higher than $0";
                 cout << "Pay rate: ";
                 cin >> rate;
 }
