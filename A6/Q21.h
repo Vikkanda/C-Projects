@@ -17,7 +17,7 @@ class PayRoll
         rateofPay = 0.0;
         weeklyPay = 0.0;
 }
-    PayRoll(double hours, double rate) {
+    PayRoll(double hours, double rate) { /*Overloading the payroll constructor*/
         hoursWorked = hours;
         rateofPay = rate;
         weeklyPay = hoursWorked*rateofPay;
@@ -50,7 +50,7 @@ class PayRoll
             cout << "Pay rate: $";
             cin >> rate;
     
-            while (rate <=0) {
+            while (rate <=0) { /*Having the input validation being done here instead of in a seperate input validation file*/
                 cout << "Please enter a pay rate higher than $0";
                 cout << "Pay rate: ";
                 cin >> rate;
