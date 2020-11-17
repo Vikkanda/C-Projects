@@ -3,31 +3,21 @@
 1. **The incorrect original code or code snippit that you wrote:**
 
 ``` cpp
-//code with bugs or code snippet with bug goes here
-
-//sample code
-
-// Online C++ compiler to run C++ online.
-// Write C++ code in this online editor and run it.
-
-#include <iostream>
-
-int main() {
-    std:cout << "Hello World!";
-  
-  return 0;
-}
 
 ```
 
 2. **What bug does the original code have?**
 
-  
+  C:/Users/User/Desktop/CPPProjects/Section4/A8_Q8_/main.cpp:10:17: error: expected ';' at end of member declaration
+         Student()
+                 ^
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
-4. **How to correct the bug?**
+I needed to declare a 
 
+4. **How to correct the bug?**
+C
 5. **The corresponding bug-free code or code snippet is:**
 
 ```
