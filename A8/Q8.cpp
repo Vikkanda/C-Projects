@@ -4,85 +4,80 @@ using namespace std;
 
 class Student {
 private:
-string name;
-string enrollmentYear;
+string StudentName;
+string Year;
   
 public:
+Student() {}
   
-Student() {
-  
+Student(string StudentName, string Year) {
+this->StudentName = StudentName;
+this->Year = Year;
 }
   
-Student(string name, string enrollmentYear) {
-this->name = name;
-this->enrollmentYear = enrollmentYear;
+string getStudentName() {
+return StudentName;
 }
   
-string getName() {
-return name;
+string getYear() {
+return Year;
 }
   
-string getEnrollmentYear() {
-return enrollmentYear;
+void setStudentname(string StudentName) {
+this->StudentName = StudentName;
 }
   
-void setName(string name) {
-this->name = name;
-}
-  
-void setEnrollmentYear(string enrollmentYear) {
-this->enrollmentYear = enrollmentYear;
+void setYear(string Year) {
+this->Year = Year;
 }
   
 virtual void print() {
-cout << "Name: " << name << endl;
-cout << "Enrollment Year: " << enrollmentYear << endl;
+cout << "Year of enrollment: " << Year << endl;
 }
 };
 
 class KpuStudent : public Student {
 private:
-string campusLocation;
+string Campus;
   
 public:
   
-KpuStudent(string name, string enrollmentYear, string campusLocation) : Student(name, enrollmentYear) {
-this->campusLocation = campusLocation;
+KpuStudent(string StudentName, string Year, string Campus) : Student(StudentName, Year) {
+this->Campus = Campus;
 }
   
 string getCampusLocation() {
-return campusLocation;
+return Campus;
 }
   
-void setCampusLocation(string campusLocation) {
-this->campusLocation = campusLocation;
+void setCampusLocation(string Campus) {
+this->Campus = Campus;
 }
   
 virtual void print() {
-cout << "Name: " << getName() << endl;
-cout << "Campus Location: " << campusLocation << endl;
+cout << "The location of the campus is: " << Campus << endl;
 }
 };
 class HogwartsStudent : public Student {
 private:
-string houseAffiliation;
+string house;
   
 public:
-HogwartsStudent(string name, string enrollmentYear, string houseAffiliation) : Student(name, enrollmentYear) {
-this->houseAffiliation = houseAffiliation;
+HogwartsStudent(string StudentName, string Year, string house) : Student(StudentName, Year) {
+this->house = house;
 }
   
-string getHouseAffiliation() {
-return houseAffiliation;
+string getHouse() {
+return house;
 }
   
-void setHouseAffiliation(string houseAffiliation) {
-this->houseAffiliation = houseAffiliation;
+void setHouse(string house) {
+this->house = house;
 }
   
 virtual void print() {
-cout << "Name: " << this->getName() << endl;
-cout << "House Affiliation: " << houseAffiliation << endl;
+cout << "Name: " << this->getStudentName() << endl;
+cout << "House is: " << house << endl;
 }
 };
 
